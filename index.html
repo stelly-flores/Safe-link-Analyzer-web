@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safe Link | Herramientas</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <span class="brand-title">Safe Link</span>
+        <ul class="nav-links">
+          <li><a href="home.html">Inicio</a></li>
+          <li><a href="index.html">Herramientas</a></li>
+          <li><a href="about.html">Acerca</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Existing Tools Section (always visible) -->
+      <section id="tools-section" class="tools-section">
+        <h1>Herramientas de Seguridad</h1>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <h2>Escanear URL</h2>
+            <input
+              type="text"
+              id="urlInput"
+              placeholder="Introduce una URL para escanear"
+            />
+            <button onclick="scanURL()" id="scanButton">Escanear</button>
+          </div>
+          <div class="tool-card">
+            <h2>Escanear Archivo</h2>
+            <input type="file" id="fileInput" />
+            <button onclick="scanFile()" id="scanFileButton">
+              Escanear Archivo
+            </button>
+          </div>
+          <div class="tool-card">
+            <h2>Analizar Correo Electrónico</h2>
+            <textarea
+              id="emailContentInput"
+              placeholder="Pega el contenido del correo aquí"
+            ></textarea>
+            <button onclick="analyzeEmailContent()" id="analyzeEmailButton">
+              Analizar Correo
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resultados y modales -->
+      <div id="result"></div>
+      <div id="fullReportModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div id="fullReportContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

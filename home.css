@@ -1,0 +1,144 @@
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 60px; /* Space for fixed navbar */
+  background: linear-gradient(45deg, var(--dark-blue), var(--medium-blue));
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.hero-title {
+  font-size: 3.2em;
+  color: var(--primary-blue);
+  text-shadow: 0 0 20px var(--accent-glow);
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.3em;
+  color: var(--light-blue);
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.button.button-primary {
+  background-color: var(--primary-blue);
+  color: var(--dark-blue);
+  padding: 15px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.button.button-primary:hover {
+  background-color: var(--secondary-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px var(--accent-glow);
+}
+
+/* General Home Section Styles */
+.home-section {
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.home-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 2.5em;
+  color: var(--primary-blue);
+  margin-bottom: 40px;
+}
+
+/* Features Section */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: var(--glass-bg);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.feature-icon {
+  margin-bottom: 20px;
+}
+
+.feature-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.feature-card h3 {
+  font-size: 1.5em;
+  color: var(--secondary-blue);
+  margin-bottom: 15px;
+}
+
+/* How It Works Section */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.step-card {
+  background: transparent;
+  padding: 20px;
+  position: relative;
+}
+
+.step-number {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--primary-blue);
+  position: absolute;
+  top: -10px;
+  left: 0;
+  opacity: 0.2;
+}
+
+.step-card h3 {
+  font-size: 1.5em;
+  color: var(--secondary-blue);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* CTA Section */
+.cta-section {
+  background: var(--dark-blue);
+  border-radius: 15px;
+  padding: 60px 20px;
+  margin-top: 40px;
+}
+
+.cta-section h2 {
+  font-size: 2.2em;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
